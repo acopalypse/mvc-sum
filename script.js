@@ -22,7 +22,6 @@ class View {
     this.form.append(this.input1, this.input2, this.button);
     this.main.append(this.form, this.sum);
   }
-
   showSum(n) {
     this.sum.innerHTML = n;
   }
@@ -33,7 +32,6 @@ class Controller {
     this.view = view;
     this.form = document.getElementById('sum');
     this._eventListener();
-    console.log(this.model, this.view);
   }
   _eventListener() {
     this.form.addEventListener('submit', (e) => this.handleSubmit(e));
